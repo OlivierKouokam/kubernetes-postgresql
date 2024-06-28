@@ -1,0 +1,41 @@
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-postgres-1
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp" ## this folder need exist on your node. Keep in minds also who have permissions to folder. Used tmp as it have 3x rwx
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - ip-192-168-99-16.ec2.internal
+
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-postgres-2
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp" ## this folder need exist on your node. Keep in minds also who have permissions to folder. Used tmp as it have 3x rwx
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - ip-192-168-99-166.ec2.internal 
