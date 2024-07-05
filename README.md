@@ -1,5 +1,9 @@
 # Déployer Postgresql sur Kubernetes avec Haute Disponibilité
 
+## Architecture de Haut Niveau
+
+![](images/pgsql-k8s-cluster.jpg)
+
 ## Créer un espace de noms
 
 kubectl create namespace database
