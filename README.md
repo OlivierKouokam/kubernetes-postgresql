@@ -9,17 +9,17 @@ kubectl create namespace database
 kubectl apply -f pv-localstorage.yaml
 
 ## Création des Composants du serveur Postgres:
-## ConfigMaps
-## Service Sans Tête
-## Secrets
-## StatefulSet
+- ConfigMaps 
+- Service Sans Tête 
+- Secrets 
+- StatefulSet 
 
 kubectl apply -f ./postgresql -n database
 
 ## Composants du Pg-Pool pour Postgres:
-## Secrets
-## Services: ClusterIP & NodePort
-## Déploiements
+- Secrets
+- Services: ClusterIP & NodePort
+- Déploiements
 
 kubectl apply -f ./pgpool -n database
 
@@ -47,5 +47,6 @@ insert into test_table values (3, 'value3');
 
 select * from test_table;
 
-//after connecting to the cluster using psql client. 
+//after connecting to the cluster using psql client;
+
 select * from pg_stat_replication;
