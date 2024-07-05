@@ -47,5 +47,5 @@ insert into test_table values (3, 'value3');
 
 select * from test_table;
 
-//after connecting to the cluster using psql client.
+//after connecting to the cluster using psql client. 
 select * from pg_stat_replication;
