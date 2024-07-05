@@ -39,7 +39,7 @@ PGPASSWORD=eazytraining2024 psql -h pgpool-svc -p 5432 -U postgres
 
 PGPASSWORD=eazytraining2024 psql -h <IP ADDR> -p <NODEPORT ADDR of pgpool-svc-nodeport> -U postgres
 
-create database db1; 
+create database db_test; 
 
 \c db_test; //pour se connecter à une nouvelle base de données
 
