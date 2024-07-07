@@ -2,7 +2,7 @@
 
 ## Architecture de Haut Niveau
 
-![](images/pgsql-k8s-cluster.jpg)
+![](images/Postgres-K8S-Architecture.jpg)
 
 ## Créer un espace de noms
 
