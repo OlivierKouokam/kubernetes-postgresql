@@ -17,7 +17,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - ip-192-168-99-20.ec2.internal
+          - node01
 
 ---
 kind: PersistentVolume
@@ -26,7 +26,7 @@ metadata:
   name: pv-postgres-2
 spec:
   capacity:
-    storage: 1Gi
+    storage: 2Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
@@ -38,4 +38,4 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - ip-192-168-99-176.ec2.internal
+          - node02
