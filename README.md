@@ -54,3 +54,6 @@ select * from test_table;
 //after connecting to the cluster using psql client;
 
 select * from pg_stat_replication;
+
+
+[![image](https://github.com/user-attachments/assets/78650295-1fb6-4050-ae99-246c1229b5d8)](https://youtu.be/KkcEH7OwMdE "VIDEO YOUTUBE K8S POSTGRESQL")
